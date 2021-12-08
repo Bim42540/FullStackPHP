@@ -1,6 +1,5 @@
 <?php
 
-define('UPLOAD_DIR', dirname(__FILE__) . '\uploads');
 define('ALLOWED_EXTENSION', ['png', 'jpg', 'jpeg', 'pdf']);
 
 function generateRandomString($length = 10) {

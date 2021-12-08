@@ -79,7 +79,11 @@ if (isset($_FILES['photo'])) {
         <?php endif; ?>
     </div>
     <div class="container-comment">
-        <p><?php echo 'Siektiek apie mane: ' . '<br>' . $_POST['content'] ?></p>
+        <?php if (strlen(trim($_POST['content'])) !== 0): ?>
+        <p class="bolder"><?php echo 'Siektiek apie mane: ' . '<br>' . $_POST['content'] ?></p>
+        <?php else: ?>
+            <p class="bolder">Nieko nemegstu</p>
+            <?php endif; ?>
     </div>
 
 </body>

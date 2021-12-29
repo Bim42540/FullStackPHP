@@ -7,17 +7,17 @@ class ArrayHelper
 {
     public static $arr = [7, 9, 24, 19];
 
-    public static function Sum() {
+    public static function sum() {
         $sum = array_sum(self::$arr);
         return $sum;
     }
 
-    public static function Avg() {
+    public static function avg() {
         $avg = self::Sum() / count(self::$arr);
         return $avg;
     }
 }
 
-var_dump(ArrayHelper::Sum());
+var_dump(ArrayHelper::sum());
 
-var_dump(ArrayHelper::Avg());
+var_dump(ArrayHelper::avg());

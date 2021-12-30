@@ -19,6 +19,6 @@ abstract class Person{
         return $this->name;
     }
 
-    public abstract function greetings();
+    abstract public function greetings();
 
 }
